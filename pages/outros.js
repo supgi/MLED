@@ -8,7 +8,7 @@ export default function Home () {
 
   return (
 
-    <Layout title="Home">
+    <Layout title="Outros | MLED">
       <h1 style={{minHeight:"600px"}}>MLED</h1>
     </Layout>
 
