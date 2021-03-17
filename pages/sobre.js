@@ -17,13 +17,7 @@ export default function Home () {
 
         <Row>
           <Col>
-            <Image
-              src="/MLED - Sobre.png"
-              alt="Sobre MLED"
-              width={`layout="fill"`}
-              height={`layout="responsive"`}
-              quality={80}
-            />
+            <img src="/MLED - Sobre.png" alt="Sobre MLED" style={{width:"100%"}} />
           </Col>
 
           <Col>

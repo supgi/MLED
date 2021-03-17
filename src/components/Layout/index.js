@@ -12,7 +12,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
+// script
+import script from './script'
+
 export default function Layout ({children, title}) {
+
+  const [mobile, setMobile] = React.useState(false);
 
   return (
 
@@ -43,17 +48,14 @@ export default function Layout ({children, title}) {
 
           <Col>
 
-            <Navbar expand="lg">
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse>
-                <Nav className="justify-content-end">
-                  <Nav.Item><Link href="/">Home</Link></Nav.Item>
-                  <Nav.Item><Link href="/sobre">Sobre</Link></Nav.Item>
-                  <Nav.Item><Link href="/outros">Outros</Link></Nav.Item>
-                  <Nav.Item><Link href="/contato">Contato</Link></Nav.Item>
-                </Nav>
-              </Navbar.Collapse>
-            </Navbar>
+            {!mobile && <>
+              <Link href="/">Home</Link>
+              <Link href="/sobre">Sobre</Link>
+              <Link href="/outros">Outros</Link>
+              <Link href="/contato">Contato</Link>
+            </>}
+
+            {mobile && <p>Ola</p>}
 
           </Col>
         </Row>
@@ -107,6 +109,8 @@ export default function Layout ({children, title}) {
       </Container>
 
     </footer>
+
+    {script(setMobile)}
     </>
 
   )
