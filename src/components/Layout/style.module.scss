@@ -3,3 +3,39 @@
   background-image: linear-gradient(to right, hotpink , purple, darkslateblue, darkblue);
 
 }
+
+.logo {
+
+  cursor: pointer;
+
+}
+
+.navBar {
+
+  position: relative;
+
+  div {
+
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+
+    a {
+
+      margin: 2px 5px;
+      color: white;
+      text-decoration: none;
+      padding: 2px;
+
+      &:hover {
+
+        font-weight: bold;
+        margin: 2px 2.8px;
+
+      }
+
+    }
+
+  }
+
+}
