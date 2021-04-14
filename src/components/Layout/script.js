@@ -18,13 +18,17 @@ export default function script(mobile) { try {return (
 
   window.onload = function() {
 
-    document.querySelector('header').addEventListener('mousemove', function(event) {
+    document.getElementsByTagName('body')[0].addEventListener('mousemove', function(event) {try{
 
-      console.log("Mouse Over");
+      let maxY = document.getElementsByTagName('header')[0].getBoundingClientRect().height - 1;
+
       let posX = event.clientX, posY = event.clientY;
-      particle(posX, posY, document.getElementById('headerEffect'))
 
-    })
+      if (posY <= maxY) {
+        particle(posX, posY, document.getElementById('headerEffect'))
+      }
+
+    } catch(err) {}})
 
   },
 
