@@ -10,7 +10,7 @@ import {Row, Col, Container} from 'react-bootstrap'
 // script
 //import imageSet from './script'
 
-export default function Layout ({nome, numero, email, telegram}) {
+export default function Contact ({nome, numero, email, telegram}) {
 
   const link = "https://api.whatsapp.com/send?phone=" + numero
 
