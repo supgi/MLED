@@ -28,7 +28,7 @@ export default function Home () {
             </Row>
             <Row>
               <Col>
-                <button>Baixar</button>
+                <a href="/Download/Catalogo V2.pdf" download="Catalogo.pdf">Baixar</a>
               </Col>
             </Row>
           </Col>

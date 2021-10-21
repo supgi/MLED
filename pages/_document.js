@@ -9,10 +9,10 @@ class MyDocument extends Document {
       return (
         <Html lang="pt-br">
           <Head>
-            <link rel="shortcut icon" href="/AniGato_Logo.png" />
+            <link rel="shortcut icon" href="/MLED - Favicon.png" />
 
-            <meta name="title" content="Anigato" />
-            <meta name="description" content="Um site de animes" />
+            <meta name="title" content="MLED" />
+            <meta name="description" content="Lamp" />
 
             <meta name="keywords" content="anime, Anime, anigato, Anigato, site, assistir" />
             <meta name="robots" content="index, follow" />

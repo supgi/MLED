@@ -6,7 +6,6 @@ import styles from './style.module.scss'
 
 // components
 import {Container, Row, Col, Navbar, Nav} from 'react-bootstrap'
-import Cookie from 'cookie-cutter'
 
 // next components
 import Head from 'next/head'

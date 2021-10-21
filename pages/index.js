@@ -3,15 +3,18 @@ import React from 'react';
 
 // components
 import Layout from './../src/components/Layout';
+import Album from './../src/components/Album';
 
 export default function Home () {
 
-  return (
+  return (<>
 
     <Layout title="Home | MLED">
+      <Album></Album>
       <h1 style={{minHeight:"600px"}}>MLED</h1>
     </Layout>
 
-  )
+
+  </>)
 
 }

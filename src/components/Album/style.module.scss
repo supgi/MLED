@@ -1,0 +1,36 @@
+$buttons: black;
+$background: grey;
+$buttonSize: 30px;
+
+.box {
+
+  height: 240px;
+  width: 240px;
+  background-color: $background;
+  position: relative;
+  margin: 5px;
+  padding: 0px;
+
+  .rightButton {
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: $buttons;
+    width: $buttonSize;
+    height: $buttonSize;
+
+  }
+
+  .leftButton {
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: $buttons;
+    width: $buttonSize;
+    height: $buttonSize;
+
+  }
+
+}
