@@ -7,10 +7,12 @@ import Album from './../src/components/Album';
 
 export default function Home () {
 
+  //<Album></Album>
+
   return (<>
 
     <Layout title="Home | MLED">
-      <Album></Album>
+
       <h1 style={{minHeight:"600px"}}>MLED</h1>
     </Layout>
 

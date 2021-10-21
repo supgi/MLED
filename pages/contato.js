@@ -8,6 +8,9 @@ import {Row, Col, Container} from 'react-bootstrap'
 
 export default function Contato () {
 
+  //<Col><Contact nome="Daniella" email="daniella@mledlampadas.com" numero="+55 11 97985-3308"></Contact></Col>
+  //<Col><Contact nome="Marcos" email="marcos@mledlampadas.com" numero="+55 11 94725-7270"></Contact></Col>
+
   return (
 
     <Layout title="Contato | MLED">
@@ -16,8 +19,6 @@ export default function Contato () {
 
         <Row>
 
-          <Col><Contact nome="Daniella" email="daniella@mledlampadas.com" numero="+55 11 97985-3308"></Contact></Col>
-          <Col><Contact nome="Marcos" email="marcos@mledlampadas.com" numero="+55 11 94725-7270"></Contact></Col>
 
         </Row>
 
