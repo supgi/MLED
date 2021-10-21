@@ -17,11 +17,11 @@ export default function Sobre () {
         <section>
 
           <Row>
-            <Col sm={4}>
-              <img src="/MLED - Sobre.png" alt="Sobre MLED" style={{width:"100%", maxWidth: "400px", margin:"4px 10px 4px 10px"}} />
+            <Col sm={4} style={{padding: "3px 12px"}}>
+              <img src="/MLED - Sobre.png" alt="Sobre MLED" style={{width:"100%", maxWidth: "380px", padding: "0px"}} />
             </Col>
 
-            <Col>
+            <Col style={{padding: "10px 15px"}}>
               <h2><b>Sobre a MLED</b></h2>
               <p> Empresa focada em fornecer produtos com tecnologia LED, agregando valor aos profissionais do mercado de iluminação, eletricistas e clientes finais. Trabalhamos com produtos de alta qualidade com garantia, consultores experientes e equipe treinada. Profissionais comprometidos com o sucesso de nossos clientes.</p>
               <h2><b>Nossos Valores</b></h2>
