@@ -3,3 +3,33 @@ body {
   font-family: Helvetica;
 
 }
+
+h2 {
+
+  @media (min-width: 0px) {
+
+      font-size: 18px;
+
+  }
+  @media (min-width: 720px) {
+
+      font-size: 24px;
+
+  }
+
+}
+
+p {
+
+  @media (min-width: 0px) {
+
+      font-size: 12px;
+
+  }
+  @media (min-width: 720px) {
+
+      font-size: 18px;
+
+  }
+
+}
