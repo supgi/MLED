@@ -13,6 +13,7 @@ export default function Home () {
     <Layout title="Home | MLED">
 
       <Album></Album>
+      <h1 style={{minHeight:"600px"}}>_</h1>
 
     </Layout>
 
