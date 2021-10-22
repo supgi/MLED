@@ -4,37 +4,17 @@ import React from 'react';
 // components
 import {Container, Row, Col} from 'react-bootstrap'
 import Layout from './../src/components/Layout';
+import DBoard from './../src/components/DBoard';
 
-export default function Home () {
+export default function Outros () {
 
   return (
 
     <Layout title="Outros | MLED">
-      <Container style={{margin:"45px 0px"}}>
-        <Row>
-          <Col xs={4}>
-            <img src="/MLED - Catalogo.png"></img>
-          </Col>
-          <Col>
-            <Row>
-              <Col>
-                <h2>Produtos</h2>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <p>Catálogo com as principais informações sobre os nossos produtos.</p>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <a href="/Download/Catalogo V2.pdf" download="Catalogo.pdf">Baixar</a>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
-      <h1 style={{minHeight:"600px"}}>MLED</h1>
+
+      <DBoard img="/MLED - Catalogo.png" name="Catalogo.pdf" link="/Download/Catalogo V2.pdf" title="Produtos" caption="Catálogo com as principais informações sobre os nossos produtos."></DBoard>
+
+      <h1 style={{minHeight:"600px"}}>_</h1>
     </Layout>
 
   )

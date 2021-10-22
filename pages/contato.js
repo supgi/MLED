@@ -8,6 +8,8 @@ import {Row, Col, Container} from 'react-bootstrap'
 
 export default function Contato () {
 
+
+
   return (
 
     <Layout title="Contato | MLED">
@@ -22,8 +24,6 @@ export default function Contato () {
         </Row>
 
       </Container>
-
-      <h1 style={{minHeight:"600px"}}>MLED</h1>
 
     </Layout>
 

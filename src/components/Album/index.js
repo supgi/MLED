@@ -10,7 +10,7 @@ import {Row, Col, Container} from 'react-bootstrap'
 // script
 import imageSet from './script'
 
-export default function Layout ({source = ["a", "b", "c"]}) {
+export default function Album ({source = ["a", "b", "c"]}) {
 
   let imgIndx = 0;
 
