@@ -1,5 +1,4 @@
-// react
-import React from 'react';
+import React from 'react'; // react
 
 // components
 import {Container, Row, Col} from 'react-bootstrap'

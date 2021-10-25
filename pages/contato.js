@@ -1,5 +1,4 @@
-// react
-import React from 'react';
+import React from 'react'; // react
 
 // components
 import Layout from './../src/components/Layout';
@@ -16,12 +15,26 @@ export default function Contato () {
 
       <Container fluid>
 
-        <Row>
+        <section>
 
-          <Col><Contact nome="Daniella" email="daniella@mledlampadas.com" numero="+55 11 97985-3308"></Contact></Col>
-          <Col><Contact nome="Marcos" email="marcos@mledlampadas.com" numero="+55 11 94725-7270"></Contact></Col>
+          <Row>
 
-        </Row>
+            <Col><Contact nome="Daniella" email="daniella@mledlampadas.com" numero="+55 11 97985-3308"></Contact></Col>
+            <Col><Contact nome="Marcos" email="marcos@mledlampadas.com" numero="+55 11 94725-7270"></Contact></Col>
+
+          </Row>
+
+        </section>
+
+        <section>
+          <Row>
+            <Col>
+
+              <div style={{width: "100%", margin:"40px 0px"}}><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Rua%20Marajoara,%20165+(MLED%20Lampadas)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="http://www.gps.ie/">sport gps</a></iframe></div>
+
+            </Col>
+          </Row>
+        </section>
 
       </Container>
 
