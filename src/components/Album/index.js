@@ -23,8 +23,8 @@ export default function Album ({source = ["a", "b", "c"]}) {
 
             <img src="http://via.placeholder.com/240"></img>
 
-            <div onClick={imageSet(imgIndx, 1)} className={styles.rightButton}></div>
-            <div onClick={teste} className={styles.leftButton}></div>
+            <div onClick={imageSet(imgIndx, 1)} className={styles.rightButton}><img src="/Album/Seta.svg"></img></div>
+            <div onClick={teste} className={styles.leftButton}><img src="/Album/Seta.svg"></img></div>
 
           </div></Col>
 
