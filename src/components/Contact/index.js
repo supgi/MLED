@@ -31,7 +31,7 @@ export default function Contact ({nome, numero, email, telegram}) {
         <Row> <Col>
           <a href={"https://api.whatsapp.com/send?phone=" + numero} target="_blank"><img className={styles.icon} src="Whatsapp - Logo.svg"></img></a>
           {telegram && <a href={"https://t.me/" + telegram} target="_blank"><img className={styles.icon} src="Telegram - Logo.svg"></img></a>}
-        </Col></Row>
+        </Col> </Row>
 
       </Container>
 

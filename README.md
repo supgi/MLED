@@ -3,3 +3,8 @@
 # MLED
 
 [venha conhecer nosso site](https://www.mledlampada.com)
+
+## Propriedades
+
+Editor de Texto: Atom  
+Hospedagem: Vercel  

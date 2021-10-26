@@ -1,24 +1,19 @@
-// react
-import React from 'react'
+import React from 'react'; // react
 
-// styles
-import styles from './style.module.scss'
+import styles from './style.module.scss'; // styles
 
-// components
-import {Container, Row, Col, Navbar, Nav} from 'react-bootstrap'
+import {Container, Row, Col, Navbar, Nav} from 'react-bootstrap'; // components
 
 // next components
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 
-// script
-import script from './script'
+import script from './script'; // script
 
 export default function Layout ({children, title}) {
 
   const [mobile, setMobile] = React.useState(false);
-  //const [theme, setTheme] = React.useState(Cookie.get('theme'));
 
   return (
 
@@ -107,7 +102,7 @@ export default function Layout ({children, title}) {
         </Row>
         <Row>
 
-          <Col className={styles.align}>
+          <Col className={styles.align} style={{margin: "20px 0px 0px 0px"}}>
 
             <p><i>©MLED<br />Created by Giovanni Graziano</i></p>
 

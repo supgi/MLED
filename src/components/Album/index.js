@@ -1,37 +1,30 @@
-// react
-import React from 'react'
+import React from 'react'; // react
 
-// styles
-import styles from './style.module.scss'
+import styles from './style.module.scss'; // styles
 
-// components
-import {Row, Col, Container} from 'react-bootstrap'
+import {Row, Col, Container} from 'react-bootstrap'; // components
 
-// script
-import imageSet from './script'
+import imageSet from './script'; // script
 
 export default function Album ({source = ["a", "b", "c"]}) {
 
   let imgIndx = 0;
+  function teste () {alert("oi")}
 
   return (
 
     <>
 
-      <Container fluid>
+      <Container>
 
         <Row>
 
           <Col><div className={styles.box}>
 
-            <div style={{
-              backgroundImage: "url('http://via.placeholder.com/240')",
-              width: "240px",
-              height:"240px",
-            }}></div>
+            <img src="http://via.placeholder.com/240"></img>
 
-            <div className={styles.rightButton} onClick={imageSet(imgIndx, 1)}></div>
-            <div className={styles.leftButton}></div>
+            <div onClick={imageSet(imgIndx, 1)} className={styles.rightButton}></div>
+            <div onClick={teste} className={styles.leftButton}></div>
 
           </div></Col>
 

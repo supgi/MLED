@@ -14,16 +14,14 @@ export default function Contato () {
     <Layout title="Contato | MLED">
 
       <Container fluid>
-
+      
         <section>
-
           <Row>
 
-            <Col><Contact nome="Daniella" email="daniella@mledlampadas.com" numero="+55 11 97985-3308"></Contact></Col>
-            <Col><Contact nome="Marcos" email="marcos@mledlampadas.com" numero="+55 11 94725-7270"></Contact></Col>
+            <Col><Contact nome="Daniella" email="daniella@mledlampadas.com" numero="+55 11 97985-3308" /></Col>
+            <Col><Contact nome="Marcos" email="marcos@mledlampadas.com" numero="+55 11 94725-7270" /></Col>
 
           </Row>
-
         </section>
 
         <section>
