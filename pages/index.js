@@ -13,9 +13,11 @@ export default function Home () {
 
     <Layout title="Home | MLED">
 
-      <section>
 
-        <Container fluid>
+
+      <Container fluid>
+
+        <section>
 
           <Row>
 
@@ -30,9 +32,21 @@ export default function Home () {
 
           </Row>
 
-        </Container>
+        </section>
 
-      </section>
+        <section>
+
+          <Row>
+
+            <Col><h2><b>Alguns de nossos clientes</b></h2></Col>
+
+          </Row>
+
+        </section>
+
+      </Container>
+
+
 
       <h1 style={{minHeight:"600px"}}>_</h1>
 

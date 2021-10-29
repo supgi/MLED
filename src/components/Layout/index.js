@@ -1,7 +1,5 @@
 import React from 'react'; // react
-
 import styles from './style.module.scss'; // styles
-
 import {Container, Row, Col, Navbar, Nav} from 'react-bootstrap'; // components
 
 // next components
@@ -15,9 +13,8 @@ export default function Layout ({children, title}) {
 
   const [mobile, setMobile] = React.useState(false);
 
-  return (
+  return (<>
 
-    <>
     <Head>
 
       <title>{title}</title>
@@ -116,8 +113,7 @@ export default function Layout ({children, title}) {
     </footer>
 
     {script(setMobile)}
-    </>
 
-  )
+  </>)
 
 }
