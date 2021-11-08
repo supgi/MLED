@@ -5,7 +5,7 @@ import {Row, Col, Container} from 'react-bootstrap'; // components
 // script
 //import imageSet from './script'
 
-export default function Contact ({nome, numero, email, telegram}) {
+export default function Contact ({nome, numero, email, telegram, img = "https://via.placeholder.com/420"}) {
 
   const link = "https://api.whatsapp.com/send?phone=" + numero
 
@@ -15,7 +15,7 @@ export default function Contact ({nome, numero, email, telegram}) {
 
       <Container fluid>
 
-        <Row> <Col><img className={styles.perfil} src="https://via.placeholder.com/420"></img></Col> </Row>
+        <Row> <Col><img className={styles.perfil} src={img}></img></Col> </Row>
 
         <Row> <Col><p><b>Nome:</b> {nome}</p></Col> </Row>
 

@@ -8,12 +8,14 @@ import Album from './../src/components/Album';
 
 export default function Home () {
 
+  const src = [
+    "/Images/MLED - 50 Desconto.jpg",
+    "/Images/MLED - Lampadas LED.jpg"
+  ]
 
   return (<>
 
     <Layout title="Home | MLED">
-
-
 
       <Container fluid>
 
@@ -21,24 +23,16 @@ export default function Home () {
 
           <Row>
 
-            <Col style={{minWidth: "300px"}}><Album /></Col>
+            <Col sm={1}></Col>
+            <Col sm={6}><Album source={src} height="100%" /></Col>
 
             <Col>
 
-              <Row><Col style={{minWidth: "120px"}}><img src="https://via.placeholder.com/140"></img></Col></Row>
-              <Row><Col style={{minWidth: "120px"}}>2</Col></Row>
+              <Row><Col><img style={{maxHeight:"240px", width: "100%", height: "auto"}} src="/Images/MLED - Contato.png"></img></Col></Row>
+              <Row><Col><img style={{maxHeight:"240px", width: "100%", height: "auto"}} src="/Images/MLED - Sua Nescessidade.jpg"></img></Col></Row>
 
             </Col>
-
-          </Row>
-
-        </section>
-
-        <section>
-
-          <Row>
-
-            <Col><h2><b>Alguns de nossos clientes</b></h2></Col>
+            <Col sm={1}></Col>
 
           </Row>
 
@@ -46,12 +40,7 @@ export default function Home () {
 
       </Container>
 
-
-
-      <h1 style={{minHeight:"600px"}}>_</h1>
-
     </Layout>
-
 
   </>)
 

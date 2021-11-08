@@ -3,11 +3,18 @@ $buttonSize: 30px;
 
 .box {
 
-  height: 240px;
-  width: 240px;
   position: relative;
   margin: 0px 0px 0px auto;
   padding: 0px;
+  background-color: $background;
+  text-align: center;
+
+  img {
+
+    width: auto;
+    height: 100%;
+
+  }
 
   .rightButton {
 
