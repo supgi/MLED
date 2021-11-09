@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 const title = "MLED";
 const descricao = "A luz que faltava no seu bolso";
 const keys = "LED, led, luz, Lâmpada, lampada, MLED, mled, m.led, LEDs, luzes, iluminação";
-const tumb = "http://via.placeholder.com/500x240";
+const tumb = "/Images/MLED - 50 Desconto.jpg";
 const url = "https://www.mledlampadas.com/"
 
 class MyDocument extends Document {
