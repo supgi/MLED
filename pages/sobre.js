@@ -11,7 +11,7 @@ export default function Sobre () {
   return (
 
     <Layout title="Sobre | MLED">
-      <Container fluid style={{margin: "45px 0px"}}>
+      <Container>
         <section>
 
           <Row>

@@ -17,22 +17,20 @@ export default function Home () {
 
     <Layout title="Home | MLED">
 
-      <Container fluid>
+      <Container>
 
         <section>
 
           <Row>
 
-            <Col sm={1}></Col>
-            <Col sm={6}><Album source={src} height="100%" /></Col>
+            <Col sm={7} style={{padding: "40px"}}><Album source={src} height="100%" /></Col>
 
-            <Col>
+            <Col sm={true} style={{padding: "40px"}}>
 
               <Row><Col><img style={{maxHeight:"240px", width: "100%", height: "auto"}} src="/Images/MLED - Contato.png"></img></Col></Row>
               <Row><Col><img style={{maxHeight:"240px", width: "100%", height: "auto"}} src="/Images/MLED - Sua Nescessidade.jpg"></img></Col></Row>
 
             </Col>
-            <Col sm={1}></Col>
 
           </Row>
 
