@@ -1,5 +1,4 @@
-// react
-import React from 'react';
+import React from 'react'; // react
 
 // components
 import {Container, Row, Col} from 'react-bootstrap'
@@ -12,9 +11,14 @@ export default function Outros () {
 
     <Layout title="Outros | MLED">
 
-      <DBoard img="/MLED - Catalogo.png" name="Catalogo.pdf" link="/Download/Catalogo V2.pdf" title="Produtos" caption="Catálogo com as principais informações sobre os nossos produtos."></DBoard>
+      <section>
 
-      <h1 style={{minHeight:"600px"}}>_</h1>
+        <DBoard img="/MLED - Catalogo.png" name="Catalogo.pdf" link="/Download/Catalogo V2.pdf" title="Produtos" caption="Catálogo com as principais informações sobre os nossos produtos." />
+
+      </section>
+
+      <div style={{minHeight: "350px"}}></div>
+
     </Layout>
 
   )

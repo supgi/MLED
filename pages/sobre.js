@@ -1,19 +1,17 @@
-// react
-import React from 'react';
+import React from 'react'; // react
 
 // components
 import {Container, Row, Col} from 'react-bootstrap'
 import Layout from './../src/components/Layout';
 
-// next components
-import Image from 'next/image'
+import Image from 'next/image' // next components
 
 export default function Sobre () {
 
   return (
 
     <Layout title="Sobre | MLED">
-      <Container fluid style={{margin: "45px 0px"}}>
+      <Container>
         <section>
 
           <Row>

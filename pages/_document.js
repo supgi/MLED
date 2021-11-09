@@ -3,6 +3,8 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 const title = "MLED";
 const descricao = "A luz que faltava no seu bolso";
 const keys = "LED, led, luz, Lâmpada, lampada, MLED, mled, m.led, LEDs, luzes, iluminação";
+const tumb = "/Images/MLED - 50 Desconto.jpg";
+const url = "https://www.mledlampadas.com/"
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -24,13 +26,13 @@ class MyDocument extends Document {
             <meta name="language" content="Portuguese" />
 
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://metatags.io/" />
+            <meta property="og:url" content={url} />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={descricao} />
-            <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
+            <meta property="og:image" content={tumb} />
 
             <meta property="twitter:card" content="summary_large_image" />
-            <meta property="twitter:url" content="https://metatags.io/" />
+            <meta property="twitter:url" content={url} />
             <meta property="twitter:title" content={title} />
 
             <meta name="keywords" content={keys} />
@@ -39,16 +41,16 @@ class MyDocument extends Document {
             <meta name="language" content="Portuguese" />
 
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://metatags.io/" />
+            <meta property="og:url" content={url} />
             <meta property="og:title" content={title} />
             <meta property="og:description" content={descricao} />
-            <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
+            <meta property="og:image" content={tumb} />
 
             <meta property="twitter:card" content="summary_large_image" />
-            <meta property="twitter:url" content="https://metatags.io/" />
+            <meta property="twitter:url" content={url} />
             <meta property="twitter:title" content={title} />
             <meta property="twitter:description" content={descricao} />
-            <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
+            <meta property="twitter:image" content={tumb} />
 
           </Head>
           <body>

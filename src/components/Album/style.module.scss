@@ -1,24 +1,42 @@
-$buttons: black;
 $background: grey;
 $buttonSize: 30px;
 
 .box {
 
-  height: 240px;
-  width: 240px;
-  background-color: $background;
   position: relative;
-  margin: 5px;
+  margin: 0px 0px 0px auto;
   padding: 0px;
+  background-color: $background;
+  text-align: center;
+
+  img {
+
+    width: auto;
+    height: 100%;
+
+  }
 
   .rightButton {
 
     position: absolute;
     bottom: 0px;
     right: 0px;
-    background-color: $buttons;
     width: $buttonSize;
     height: $buttonSize;
+    border: solid 2px;
+    border-radius: 3px;
+
+    &:hover {
+
+      cursor: pointer;
+
+    }
+
+    img {
+
+      padding: 2px;
+
+    }
 
   }
 
@@ -27,9 +45,23 @@ $buttonSize: 30px;
     position: absolute;
     bottom: 0px;
     left: 0px;
-    background-color: $buttons;
     width: $buttonSize;
     height: $buttonSize;
+    border: solid 2px;
+    border-radius: 3px;
+    transform: scaleX(-1);
+
+    &:hover {
+
+      cursor: pointer;
+
+    }
+
+    img {
+
+      padding: 2px;
+
+    }
 
   }
 

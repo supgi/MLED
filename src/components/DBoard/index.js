@@ -1,11 +1,6 @@
-// react
-import React from 'react'
-
-// styles
-import styles from './style.module.scss'
-
-// components
-import {Row, Col, Container} from 'react-bootstrap'
+import React from 'react'; // react
+import styles from './style.module.scss'; // styles
+import {Row, Col, Container} from 'react-bootstrap'; // components
 
 export default function DBoard ({img, title, caption, link, name}) {
 

@@ -1,46 +1,35 @@
-// react
-import React from 'react'
+import React from 'react'; // react
+import styles from './style.module.scss'; // styles
+import {Row, Col, Container} from 'react-bootstrap'; // components
+import imageSet from './script'; // script
 
-// styles
-import styles from './style.module.scss'
+export default function Album ({
+  width = "auto",
+  height = "240px",
+  source = ["http://via.placeholder.com/240"]
+}) {
 
-// components
-import {Row, Col, Container} from 'react-bootstrap'
+  const [context, setContext] = React.useState({
+    src: source,
+    indx: 0
+  });
 
-// script
-import imageSet from './script'
+  const size = {
+    height: height,
+    width: width
+  }
 
-export default function Album ({source = ["a", "b", "c"]}) {
+  return (<>
 
-  let imgIndx = 0;
+    <div style={size} className={styles.box}>
 
-  return (
+      <img src={source[0]}></img>
 
-    <>
+      <div onClick={(e) => {imageSet(e, context, setContext, 1)}} className={styles.rightButton}><img src="/Album/Seta.svg"></img></div>
+      <div onClick={(e) => {imageSet(e, context, setContext, 0)}} className={styles.leftButton}><img src="/Album/Seta.svg"></img></div>
 
-      <Container fluid>
+    </div>
 
-        <Row>
-
-          <Col><div className={styles.box}>
-
-            <div style={{
-              backgroundImage: "url('http://via.placeholder.com/240')",
-              width: "240px",
-              height:"240px",
-            }}></div>
-
-            <div className={styles.rightButton} onClick={imageSet(imgIndx, 1)}></div>
-            <div className={styles.leftButton}></div>
-
-          </div></Col>
-
-        </Row>
-
-      </Container>
-
-    </>
-
-  )
+  </>)
 
 }

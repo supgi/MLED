@@ -1,5 +1,9 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/supgi/MLED)
-
 # MLED
 
-[venha conhecer nosso site](https://www.mledlampada.com)
+[Clique aqui e conheça o site](https://www.mledlampadas.com)
+
+## Propriedades
+
+**Editor de Texto:** Atom  
+**Hospedagem:** Vercel  
+**Frameworks:** Next.js, React, React-dom, SCSS, Bootstrap e React-Bootstrap
