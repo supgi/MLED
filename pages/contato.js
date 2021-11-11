@@ -16,15 +16,21 @@ export default function Contato () {
       <Container fluid>
 
         <section>
+
+          <div style={{width:"100%", textAlign:"center"}}><h2><b>Envie-nos uma mensagem:</b></h2></div>
+
           <Row>
 
-            <Col><Contact img="/Images/MLED - Lampada.png" nome="Daniella" email="daniella@mledlampadas.com" numero="+55 11 97985-3308" /></Col>
-            <Col><Contact img="/Images/MLED - Lampada.png" nome="Marcos" email="marcos@mledlampadas.com" numero="+55 11 94725-7270" /></Col>
+            <Col><Contact img="/Images/MLED - Lampada Rosa.svg" nome="Daniella" email="daniella@mledlampadas.com" numero="+55 11 97985-3308" /></Col>
+            <Col><Contact img="/Images/MLED - Lampada Azul.svg" nome="Marcos" email="marcos@mledlampadas.com" numero="+55 11 94725-7270" /></Col>
 
           </Row>
         </section>
 
         <section>
+
+          <div style={{width:"100%", textAlign:"center"}}><h2><b>Visite-nos:</b></h2></div>
+
           <Row>
             <Col>
 
