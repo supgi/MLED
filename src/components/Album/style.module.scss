@@ -8,11 +8,14 @@ $buttonSize: 30px;
   padding: 0px;
   background-color: $background;
   text-align: center;
+  overflow: hidden;
 
   img {
 
     width: auto;
     height: 100%;
+    display: block;
+    margin: auto;
 
   }
 
