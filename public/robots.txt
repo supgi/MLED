@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mledlampadas.com/api/sitemap
+Sitemap: https://www.mledlampadas.com/sitemap.xml
