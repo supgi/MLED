@@ -7,3 +7,4 @@
 * - [x] Contato
 * - [ ] Layout
 * - [ ] 404
+* - [ ] Sitemap

@@ -58,8 +58,19 @@
 
     & p {
 
-      font-size: 14px;
       margin: 1px;
+
+      @media (min-width: 0px) {
+
+        font-size: 10px;
+
+      }
+
+      @media (min-width: 800px) {
+
+        font-size: 14px;
+
+      }
 
     }
 

@@ -27,7 +27,7 @@ export default function Home () {
 
             <Col sm={true} style={{padding: "40px"}}>
 
-              <Row><Col><img style={{maxHeight:"240px", width: "100%", height: "auto"}} src="/Images/MLED - Contato.png"></img></Col></Row>
+              <Row><Col><img style={{paddingBottom: "12px", maxHeight:"240px", width: "100%", height: "auto"}} src="/Images/MLED - Contato.png"></img></Col></Row>
               <Row><Col><img style={{maxHeight:"240px", width: "100%", height: "auto"}} src="/Images/MLED - Sua Nescessidade.jpg"></img></Col></Row>
 
             </Col>
