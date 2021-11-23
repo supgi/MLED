@@ -16,7 +16,7 @@ export default function Sobre () {
 
           <Row>
             <Col sm={4} style={{padding: "3px 12px"}}>
-              <img src="/MLED - Sobre.png" alt="Sobre MLED" style={{width:"100%", maxWidth: "380px", padding: "0px"}} />
+              <img src="/MLED - Sobre.webp" alt="Sobre MLED" style={{width:"100%", maxWidth: "380px", padding: "0px"}} />
             </Col>
 
             <Col style={{padding: "10px 15px"}}>
