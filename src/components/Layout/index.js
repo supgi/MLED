@@ -15,11 +15,8 @@ export default function Layout ({children, title}) {
 
   return (<>
 
-    <Head>
+    <Head> <title>{title}</title> </Head>
 
-      <title>{title}</title>
-
-    </Head>
     <header className={styles.header}>
 
     <div id="headerEffect" style={{position: "relative"}}></div>
