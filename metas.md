@@ -1,9 +1,9 @@
 # Paginas
 * - [ ] Home
- * - [ ] Arrumar layout
+ * - [x] Arrumar layout
 * - [x] Sobre
 * - [ ] Outros
- * - [ ] Atualizar items pra download
+ * - [ ] Atualizar itens pra download
 * - [x] Contato
 * - [ ] Layout
 * - [ ] 404

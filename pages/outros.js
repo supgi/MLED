@@ -13,7 +13,7 @@ export default function Outros () {
 
       <section>
 
-        <DBoard img="/MLED - Catalogo.png" name="Catalogo.pdf" link="/Download/Catalogo V2.pdf" title="Nossos Produtos" caption="Catálogo com as principais informações sobre os nossos produtos." />
+        <DBoard img="/MLED - Catalogo.jpg" name="Catalogo.pdf" link="/Download/Catalogo V2.pdf" title="Nossos Produtos" caption="Catálogo com as principais informações sobre os nossos produtos." />
 
       </section>
 
