@@ -10,6 +10,25 @@ import Link from 'next/link';
 
 import script from './script'; // script
 
+const teste = "\
+.toggle.active span:nth-child(3) {\
+  transform: translateX(60px);\
+  transition-delay: 0.125s;\
+}\
+\
+.toggle.active span:nth-child(1) {\
+  width: 25px;\
+  transform: translateY(0px) rotate(45deg);\
+}\
+\
+.toggle.active span:nth-child(2) {\
+  width: 25px;\
+  transform: translateY(0px) rotate(315deg);\
+  transition-delay: 0.25s;\
+}\
+\
+"
+
 export default function Layout ({children, title}) {
 
   return (<>
@@ -17,6 +36,12 @@ export default function Layout ({children, title}) {
     <Head> <title>{title}</title> </Head>
 
     <header className={styles.header}>
+
+    <style>
+
+    {teste}
+
+    </style>
 
     <div id="headerEffect" style={{position: "relative"}}></div>
 

@@ -6,12 +6,13 @@
   position: relative;
   width: 40px;
   height: 40px;
-  background-color: white;
-  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  overflow: hidden;
 
   & span {
 
@@ -21,6 +22,7 @@
     background-color: black;
     border-radius: 3px;
     cursor: pointer;
+    transition: 0.5s;
 
     &:nth-child(1) {
 
@@ -38,11 +40,5 @@
     }
 
   }
-
-}
-
-.toggle.active span:nth-child(3) {
-
-  transform: translateX(60px);
 
 }
