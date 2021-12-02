@@ -1,5 +1,6 @@
 import React from 'react'; // react
 import styles from './style.module.scss'; // styles
+import toggle from './toggle.module.scss'; // styles
 import {Container, Row, Col, Navbar, Nav} from 'react-bootstrap'; // components
 
 // next components
@@ -9,15 +10,38 @@ import Link from 'next/link';
 
 import script from './script'; // script
 
-export default function Layout ({children, title}) {
+const teste = "\
+.toggle.active span:nth-child(3) {\
+  transform: translateX(60px);\
+  transition-delay: 0.125s;\
+}\
+\
+.toggle.active span:nth-child(1) {\
+  width: 25px;\
+  transform: translateY(0px) rotate(45deg);\
+}\
+\
+.toggle.active span:nth-child(2) {\
+  width: 25px;\
+  transform: translateY(0px) rotate(315deg);\
+  transition-delay: 0.25s;\
+}\
+\
+"
 
-  const [mobile, setMobile] = React.useState(false);
+export default function Layout ({children, title}) {
 
   return (<>
 
     <Head> <title>{title}</title> </Head>
 
     <header className={styles.header}>
+
+    <style>
+
+    {teste}
+
+    </style>
 
     <div id="headerEffect" style={{position: "relative"}}></div>
 
@@ -41,20 +65,24 @@ export default function Layout ({children, title}) {
 
           <Col className={styles.navBar}>
 
-            {!mobile && <>
+            <div className={styles.desktop}>
               <div>
                 <Link href="/"><a>Home</a></Link>
                 <Link href="/sobre"><a>Sobre</a></Link>
                 <Link href="/outros"><a>Outros</a></Link>
                 <Link href="/contato"><a>Contato</a></Link>
               </div>
-            </>}
+            </div>
 
-            {mobile && <>
-              <div>
-                <p>Menu</p>
+            <div className={styles.mobile}>
+              <div className={toggle.toggle + " toggle"}>
+
+                <span></span>
+                <span></span>
+                <span></span>
+
               </div>
-            </>}
+            </div>
 
           </Col>
         </Row>
@@ -75,7 +103,7 @@ export default function Layout ({children, title}) {
 
             <img src="/Layout/Local.svg"></img>
 
-            <p>Rua: Marajoara, 165 <br />Jd. Vila Formosa <br /> CEP: 03460-202</p>
+            <p>Rua: Marajoara, 165 <br />Jd. Vila Formosa <br /> CEP: 03460-020</p>
 
           </Col>
           <Col className={styles.card}>
@@ -109,7 +137,7 @@ export default function Layout ({children, title}) {
 
     </footer>
 
-    {script(setMobile)}
+    {script()}
 
   </>)
 

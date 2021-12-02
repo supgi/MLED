@@ -21,8 +21,9 @@ export default function Contato () {
 
           <Row>
 
-            <Col><Contact img="/Images/MLED - Lampada Rosa.svg" nome="Daniella" email="daniella@mledlampadas.com" numero="+55 11 97985-3308" /></Col>
             <Col><Contact img="/Images/MLED - Lampada Azul.svg" nome="Marcos" email="marcos@mledlampadas.com" numero="+55 11 94725-7270" /></Col>
+            <Col><Contact img="/Images/MLED - Lampada Rosa.svg" nome="Daniella" email="daniella@mledlampadas.com" numero="+55 11 97985-3308" /></Col>
+            <Col><Contact img="/Images/MLED - Lampada Azul.svg" nome="Marcelo" email="marcelo@mledlampadas.com" numero="+55 11 94440-0044" /></Col>
 
           </Row>
         </section>

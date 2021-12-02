@@ -1,20 +1,6 @@
 import particle from './particle'
 
-export default function script(mobile) { try {return (
-
-  window.onresize = function(event) {
-
-    if (document.getElementsByTagName('body')[0].clientWidth <= 420) {
-
-      mobile(true)
-
-    } else {
-
-      mobile(false)
-
-    }
-
-  },
+export default function script() { try {return (
 
   window.onload = function() {
 
@@ -30,17 +16,10 @@ export default function script(mobile) { try {return (
 
     } catch(err) {}})
 
-  },
+    let menuToggle = document.querySelector('.toggle');
+    menuToggle.onclick = function() {
 
-  document.onload = function() {
-
-    if (document.getElementsByTagName('body')[0].clientWidth <= 420) {
-
-      mobile(true)
-
-    } else {
-
-      mobile(false)
+      menuToggle.classList.toggle('active')
 
     }
 

@@ -85,3 +85,23 @@
   }
 
 }
+
+.mobile {
+
+  @media (min-width: 700px) {
+
+    display: none;
+
+  }
+
+}
+
+.desktop {
+
+  @media (max-width: 700px) {
+
+    display: none;
+
+  }
+
+}
