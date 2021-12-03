@@ -11,6 +11,19 @@ import Link from 'next/link';
 import script from './script'; // script
 
 const teste = "\
+\
+.menu.active {\
+\
+  display: block;\
+\
+}\
+\
+.toggle.active {\
+    position: fixed;\
+    top: 7px;\
+    right: 30px;\
+}\
+\
 .toggle.active span:nth-child(3) {\
   transform: translateX(60px);\
   transition-delay: 0.125s;\
@@ -75,6 +88,7 @@ export default function Layout ({children, title}) {
             </div>
 
             <div className={styles.mobile}>
+
               <div className={toggle.toggle + " toggle"}>
 
                 <span></span>
@@ -82,6 +96,7 @@ export default function Layout ({children, title}) {
                 <span></span>
 
               </div>
+
             </div>
 
           </Col>
@@ -136,6 +151,33 @@ export default function Layout ({children, title}) {
       </Container>
 
     </footer>
+
+    <div className={styles.mobile}>
+
+      <div className={toggle.menu + " menu"}>
+
+        <div  className={toggle.menuBackground}>
+
+          <div className={toggle.menuGroup}>
+
+            <Container fluid>
+
+              <Row><Col><h4>Menu</h4></Col></Row>
+
+              <Row><Col><Link href="/"><a>Home</a></Link></Col></Row>
+              <Row><Col><Link href="/sobre"><a>Sobre</a></Link></Col></Row>
+              <Row><Col><Link href="/outros"><a>Outros</a></Link></Col></Row>
+              <Row><Col><Link href="/contato"><a>Contato</a></Link></Col></Row>
+
+            </Container>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
 
     {script()}
 

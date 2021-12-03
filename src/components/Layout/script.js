@@ -14,14 +14,21 @@ export default function script() { try {return (
         particle(posX, posY, document.getElementById('headerEffect'))
       }
 
+      let menuToggle = document.querySelector('.toggle');
+      menuToggle.addEventListener('click', function() {
+
+        menuToggle.classList.toggle('active')
+
+      })
+
+      let menu = document.querySelector('.menu');
+      menuToggle.addEventListener('click', function() {
+
+        menu.classList.toggle('active')
+
+      })
+
     } catch(err) {}})
-
-    let menuToggle = document.querySelector('.toggle');
-    menuToggle.onclick = function() {
-
-      menuToggle.classList.toggle('active')
-
-    }
 
   }
 
