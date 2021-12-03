@@ -15,15 +15,10 @@ export default function script() { try {return (
       }
 
       let menuToggle = document.querySelector('.toggle');
-      menuToggle.addEventListener('click', function() {
-
-        menuToggle.classList.toggle('active')
-
-      })
-
       let menu = document.querySelector('.menu');
       menuToggle.addEventListener('click', function() {
 
+        menuToggle.classList.toggle('active')
         menu.classList.toggle('active')
 
       })
