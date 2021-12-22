@@ -5,6 +5,7 @@ import {Container, Row, Col} from 'react-bootstrap'
 import Image from 'next/image'
 import Layout from './../src/components/Layout';
 import Album from './../src/components/Album';
+import Album2 from './../src/components/Album2';
 
 export default function Home () {
 
@@ -31,6 +32,16 @@ export default function Home () {
               <Row><Col><img style={{maxHeight:"240px", width: "100%", height: "auto"}} src="/Images/MLED - Sua Nescessidade.webp"></img></Col></Row>
 
             </Col>
+
+          </Row>
+
+        </section>
+
+        <section>
+
+          <Row>
+
+            <Col><Album2 source={src} height="100%" /></Col>
 
           </Row>
 
